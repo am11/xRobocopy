@@ -12,7 +12,7 @@ function Get-TargetResource
         [System.String]
         $Destination,
 
-        [System.String]
+        [System.String[]]
         $Files,
 
         [System.UInt32]
@@ -82,7 +82,7 @@ function Set-TargetResource
         [System.String]
         $Destination,
 
-        [System.String]
+        [System.String[]]
         $Files,
 
         [System.UInt32]
@@ -137,7 +137,7 @@ function Test-TargetResource
         [System.String]
         $Destination,
 
-        [System.String]
+        [System.String[]]
         $Files,
 
         [System.UInt32]
@@ -218,7 +218,7 @@ function Get-RobocopyArguments
         [System.String]
         $Destination,
 
-        [System.String]
+        [System.String[]]
         $Files,
 
         [System.UInt32]

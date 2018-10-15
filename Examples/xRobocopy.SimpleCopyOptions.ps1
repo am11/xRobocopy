@@ -30,6 +30,14 @@ configuration RobocopyExample
             Files = '*.sql'
         }
 
+        #this will copy only specified files in source directory
+        xRobocopy CopyByUsingFilesFilter
+        {
+            Source = 'C:\temp\source'
+            Destination = 'C:\temp\destination'
+            Files = @('test1.txt', 'test2.txt')
+        }
+
         #this is equivalent of using /e option
         xRobocopy CopyFilesAndSubfolders
         {
